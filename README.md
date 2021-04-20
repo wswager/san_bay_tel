@@ -145,7 +145,7 @@ The model's F1 Score, 90.32%, is the highest of models so far.
 ## Feature Importance
 ![xgb_feature_importance.png](https://github.com/wswager/san_bay_tel/blob/main/images/feature_importance/xgb_feature_importance.png)
 
-The above feature importance indicates the the most most significant features toward predicting customer churn are the features associated with minutes, with the top four features being:
+The above feature importance indicates the most most significant features toward predicting customer churn are the features associated with minutes, with the top four features being:
 * Daytime Minutes - F-Score: 446
 * Evening Minutes - F-Score: 440
 * Night Minutes - F-Score: 294
