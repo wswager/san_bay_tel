@@ -14,7 +14,7 @@ San Bay Tel is a new telecommunications startup looking to establish themselves 
 San Day Tel's main priority is retention while they establish themselves in the market.  For this reason they have requested a model predicting the likelihood of customer churn.
 ***
 # Data
-## ## Churn in Telecom Data
+## Churn in Telecom Data
 
 Data associated telecommunications customers from the San Franciscon Bay area, area codes:
 
@@ -151,6 +151,10 @@ The above feature importance indicates the the most most significant features to
 
 (All remaining features drop to F-Scores between 159 and 99)
 ***
+# San Bay Tel
+![bridge_logo.jpg](https://github.com/wswager/san_bay_tel/blob/main/images/bridge_logo.jpg)
+***
+![bridge_photo](https://github.com/wswager/san_bay_tel/blob/main/images/bridge_photo.jpg)
 # Thank You
 
 ### Wes Swager
