@@ -34,8 +34,10 @@ Remove phone number, area code, and state
 Define Catergorical Data and Label Encode
 ***
 # Data Exploration
-Total Churn: 483 
-Percentage of Churn: 14.49 %
+**Total Churn**: 483 
+
+**Percentage of Churn**: 14.49 %
+
 ![total_churn.png](https://github.com/wswager/san_bay_tel/blob/main/images/histograms/total_churn.png)
 
 ## Feature Exploration
