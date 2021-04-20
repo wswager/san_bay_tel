@@ -53,7 +53,7 @@ Example: International Plan
 # Modeling
 ***
 ## Evaluation Metrics
-The following metrics are being calulated for each of the models tested:
+The following metrics are being calculated for each of the models tested:
 * Accuracy as compared to the inverse of the percentage of churn (85.51%)(the average of random samplings of the data would have an accuracy of 85.51%, therefore, for accuracy to be considered positive it would need to indicate a significant improvement over this baseline)
 
 * Precision, the ratio of false negatives, instances correctly identified as churned
