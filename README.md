@@ -16,7 +16,7 @@ San Day Tel's main priority is retention while they establish themselves in the 
 # Data
 ## Churn in Telecom Data
 
-Data associated telecommunications customers from the San Franciscon Bay area, area codes:
+Data associated telecommunications customers from the San Francisco Bay area, area codes:
 
 * **415** City of San Francisco, Marin County, and the northeast corner of San Mateo County
 * **408** City of San Jose, Santa Clara County, and northern Santa Cruz County
