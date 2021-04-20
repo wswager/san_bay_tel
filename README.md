@@ -64,7 +64,7 @@ The following metrics are being calculated for each of the models tested:
 
 For each model, a confusion matrix is being created, visually representing the dispersal of True Positives, True Negatives, False Positives, and False Negatives.
 
-San Bay Tel has requested a model predicting the liklihood of churn.  Therefore, for the purposes of the this project the highest valued metrics will be Precision and Accuracy.
+San Bay Tel has requested a model predicting the likelihood of churn.  Therefore, for the purposes of the this project the highest valued metrics will be Precision and Accuracy.
 ***
 ## Logistic Regression Evaluation
 ![logistic_regression.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/logistic_regression.png)
@@ -140,7 +140,7 @@ The model's F1 Score, 90.32%, is the highest of models so far.
 ***
 # Conclusion
 
-**Based on the metrics calculated ans the valuation of the metrics stated based on the business problem, XG Boost performed best of all of the models tested.**
+**Based on the metrics calculated and the valuation of the metrics stated based on the business problem, XG Boost performed best of all of the models tested.**
 ***
 ## Feature Importance
 ![xgb_feature_importance.png](https://github.com/wswager/san_bay_tel/blob/main/images/feature_importance/xgb_feature_importance.png)
