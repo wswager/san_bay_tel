@@ -66,81 +66,28 @@ For each model, a confusion matrix is being created, visually representing the d
 
 San Bay Tel has requested a model predicting the likelihood of churn.  Therefore, for the purposes of the this project the highest valued metrics will be Precision and Accuracy.
 ***
-## Logistic Regression Evaluation
-![logistic_regression.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/logistic_regression.png)
-
-The model's accuracy, 88.02% is not significantly higher than the inverse percentage of customers who churn, 85.50%.
-
-The model's precision, 78.94%, indicates the model is detecting a higher percentage of false instance of churn.
-
-The model's F1 Score, 42.85%, is low.
-***
-## Ada Boost Evaluation
-![adaboost.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/adaboost.png)
-
-The model's accuracy, 88.02% is the same as the Logistic Regression model.
-
-The model's precision, 65.71%, is lower than the Logistic Regression model.
-
-The model's F1 Score, 42.85%, is higher than the Logistic Regression model.
-***
-## K Neighbors Evaluation
-![k_neighbors.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/k_neighbors.png)
-
-The model's accuracy, 88.02% is the same as the Logistic Regression and Ada Boost models.
-
-The model's precision, 86.67%, is higher than the Logistic Regression and Ada Boost models.
-
-The model's F1 Score, 39.39%, is lower than the Logistic Regression and Ada Boost models.
-***
-## Decision Tree Evaluation
-![decision_tree.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/decision_tree.png)
-
-The model's accuracy, 93.41%, is the highest of models so far.
-
-The model's precision, 73.08%, is the second highest of the models so far (with Decision Tree being higher).
-
-The model's F1 Score, 73.79%, is the highest of models so far.
-***
-## Extra Tree Evaluation
-![extra_tree.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/extra_tree.png)
-
-The model's accuracy, 96.41%, is the highest of models so far.
-
-The model's precision, 97.56%, is the highest of models so far.
-
-The model's F1 Score, 86.96%, is the highest of models so far.
-***
-## Gradient Boosting Evaluation
-![gradient_boosting.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/gradient_boosting.png)
-
-The model's accuracy, 96.70%, is the highest of models so far.
-
-The model's precision, 97.61%, is the highest of models so far.
-
-The model's F1 Score, 88.17%, is the highest of models so far.
-***
-## Random Forest Evaluation
-![random_forest.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/random_forest.png)
-
-The model's accuracy, 97.01%, is the highest of models so far.
-
-The model's precision, 97.50%, is the second highest of models so far (with Gradient Boosting being higher).
-
-The model's F1 Score, 85.71%, is the third highest of models so far(with Gradient Boosting and Extra Trees being higher).
-***
-## XG Boost Evaluation
-![xg_boost.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/xg_boost.png)
-
-The model's accuracy, 97.30%, is the highest of models so far.
-
-The model's precision, 100.00%, is the highest of models so far.
-
-The model's F1 Score, 90.32%, is the highest of models so far.
+## Model Fitting
+The following models were fitted:
+* Logistic Regression Evaluation
+* Ada Boost Evaluation
+* K Neighbors Evaluation
+* Decision Tree Evaluation
+* Extra Tree Evaluation
+* Gradient Boosting Evaluation
+* Random Forest Evaluation
+* XG Boost
 ***
 # Conclusion
 
 **Based on the metrics calculated and the valuation of the metrics stated based on the business problem, XG Boost performed best of all of the models tested.**
+
+![xg_boost.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/xg_boost.png)
+
+**Accuracy**: 97.30%
+
+**Precision**: 100.00%
+
+**F1 Score**: 90.32%
 ***
 ## Feature Importance
 ![xgb_feature_importance.png](https://github.com/wswager/san_bay_tel/blob/main/images/feature_importance/xgb_feature_importance.png)
