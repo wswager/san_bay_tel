@@ -11,7 +11,7 @@ Analyze data associated with telecommunications customers in the San Francisco B
 
 San Bay Tel is a new telecommunications startup looking to establish themselves in the San Francisco Bay area. 
 
-San Day Tel's main priority is retention while they establish themselves in the market.  For this reason they have requested a model predicting the likelihood of customer churn.
+San Bay Tel's main priority is retention while they establish themselves in the market.  For this reason they have requested a model predicting the likelihood of customer churn.
 ***
 # Data
 ## Churn in Telecom Data
@@ -141,6 +141,27 @@ This poses the questions:
 ***
 # Next Steps
 
+Following the findings of this investigation analyzing data associated with telecommunications customers in the San Francisco Bay area and predicting churn using classification modeling, the next steps towards further enhancing San Bay Tel's retention while they establish themselves in the market and limiting the likelihood of customer churn, would be:
+
+**Further Modeling**
+The most important features toward predicting churn were all associated with minutes, which is a continuous, numerical data type. 
+
+Other modeling types beyond classification models, may help provide further insight toward better predicting churn.
+
+**Customer Polling**
+Many of the questions posed in the conclusions can be further explored through targeted polling of customer most likely to churn.
+
+Then further analysis and modelling can be done with the resulting data.
+
+**Investigation of Service Quality**
+An investigation may be warranted into the quality of service, due to customers with higher number of minutes used having a higher churn rate.
+
+Rating factors such as connection strength by geographic location, connection strength by time of day, etc.,  can then be modelled against churn rate.
+
+**Logging of Customer Service Call Topic**
+Logging the topics of customer service calls may be warranted.
+
+The resulting data can then be modeled against churn and other factors associated with the topic.
 ***
 # San Bay Tel
 ![bridge_logo.jpg](https://github.com/wswager/san_bay_tel/blob/main/images/bridge_logo.jpg)
