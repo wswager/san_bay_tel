@@ -162,6 +162,7 @@ An investigation may be warranted into the quality of service, due to customers 
 Rating factors such as connection strength by geographic location, connection strength by time of day, etc.,  can then be modelled against churn rate.
 ***
 **Logging of Customer Service Call Topic**
+
 Logging the topics of customer service calls may be warranted.
 
 The resulting data can then be modeled against churn and other factors associated with the topic.
