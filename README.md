@@ -54,7 +54,8 @@ Example: International Plan
 ***
 ## Evaluation Metrics
 The following metrics are being calculated for each of the models tested:
-* Accuracy as compared to the inverse of the percentage of churn (85.51%)(the average of random samplings of the data would have an accuracy of 85.51%, therefore, for accuracy to be considered positive it would need to indicate a significant improvement over this baseline)
+
+* ROC Score, the measurement of the Area Under the Curve (AUC) for the Receiver Operating Characteristic (ROC), a plot of True Positive Rate (TPR) v False Positive Rate (FPR)
 
 * Precision, the ratio of false negatives, instances correctly identified as churned
 
@@ -62,9 +63,11 @@ The following metrics are being calculated for each of the models tested:
 
 * F1 Score, the weighted average of the precision and recall values
 
-For each model, a confusion matrix is being created, visually representing the dispersal of True Positives, True Negatives, False Positives, and False Negatives.
+Training and Test data metrics will be displayed to ensure overfitting is avoided.
 
-San Bay Tel has requested a model predicting the likelihood of churn.  Therefore, for the purposes of the this project the highest valued metrics will be Precision and Accuracy.
+The base metric used to evaluate the success of the models will be ROC Score, analyzing the predictive power through maximizing true positives and minimizing false positives.
+
+San Bay Tel has requested a model predicting the likelihood of churn.  Therefore, for the purposes of the this project the next highest valued metric will be Precision, the proportion of actual customers who churned correctly classified with F1 Score considered only as a third (much lessor) metric for comparison purposes between similarly performing models.
 ***
 ## Model Fitting
 The following models were fitted:
@@ -77,28 +80,67 @@ The following models were fitted:
 * Random Forest Evaluation
 * XG Boost
 ***
-# Conclusion
+## Modeling Conclusion
 
-**Based on the metrics calculated and the valuation of the metrics stated based on the business problem, XG Boost performed best of all of the models tested.**
+**Based on the metrics calculated and the valuation of the metrics stated based on the business problem, XG Boost performed best of all of the models tested**
+
+* **ROC Score: 91.80%
+* **Precision: 95.56%
+* **F1 Score: 89.58%
 
 ![xg_boost.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/xg_boost.png)
 
-**Accuracy**: 97.30%
-
-**Precision**: 100.00%
-
-**F1 Score**: 90.32%
+![xg_roc.png](https://github.com/wswager/san_bay_tel/blob/main/images/roc/xgb_roc.png)
 ***
-## Feature Importance
-![xgb_feature_importance.png](https://github.com/wswager/san_bay_tel/blob/main/images/feature_importance/xgb_feature_importance.png)
+# Conclusions
 
-The above feature importance indicates the most most significant features toward predicting customer churn are the features associated with minutes, with the top four features being:
-* Daytime Minutes - F-Score: 446
-* Evening Minutes - F-Score: 440
-* Night Minutes - F-Score: 294
-* International Minutes - F-Score: 233
+## Minutes
+Feature Importance indicates the most most significant features toward predicting customer churn are the features associated with minutes used by the customer, with the top three overall features being:
+* Daytime Minutes
+* Evening Minutes
+* International Minutes
 
-(All remaining features drop to F-Scores between 159 and 99)
+The visualization for Churn by Daytime Minutes indicates a skew churn toward the higher number of daytime minutes used.
+
+![daytime_minutes.png](https://github.com/wswager/san_bay_tel/blob/main/images/histograms/daytime_minutes.png)
+
+This poses the question, is there a factor regarding the service which is negatively impacting customers who use more daytime minutes?
+Possible factors may be:
+* General quality of service in the area
+* Areas of lower quality
+* Decreased quality at high use times during the day
+***
+## Customer Service Calls
+The next most important feature not associated with minutes used (or, closely associated, number of calls) is Customer Service Calls.
+
+The visual for Churn by Customer Service Calls indicates a skew for churn toward customer with greater than three customer service calls.
+
+![customer_service_calls.png](https://github.com/wswager/san_bay_tel/blob/main/images/histograms/customer_service_calls.png)
+
+Further investigation reveals **51.68%** of customers with greater than three customer service calls churn v **11.25%** of customers with three or less.
+
+This poses questions such as:
+* What are the questions and/or issues customers are calling about?
+* Can the individual questions and/or issues be resolved to a more satisfactory level (within reason of the overall business-model) so as to retain customers?
+* Are there recurring questions and/or issues across customer service calls which can be addresses at a macro-level?
+* Are customers satisfied with their interactions with customer service; what is customers' perception of the quality of customer service?
+***
+# Voicemails
+The next most important feature after Customer Service Calls is Number of Voicemail messages.
+
+The visual for Churn by Number of Voicemail Messages indicates a much higher churn rate amongst customers with zero voicemails, which is consistent with Churn by Voicemail Mail, which indicates a significantly higher rate of churn amongst customers without a voicemail plan (who would therefore have zero voicemails).
+
+![number_of_voicemails.png](https://github.com/wswager/san_bay_tel/blob/main/images/histograms/number_of_voicemails.png)
+![voicemail_plan.png](https://github.com/wswager/san_bay_tel/blob/main/images/histograms/voicemail_plan.png)
+
+Further investigation reveals **83.44%** of customers who churn do not have a voicemail plan.
+
+This poses the questions:
+* Are customers aware of the voicemail plan?
+* Are sales associates educating customers about the voicemail plan and encouraging it?
+***
+# Next Steps
+
 ***
 # San Bay Tel
 ![bridge_logo.jpg](https://github.com/wswager/san_bay_tel/blob/main/images/bridge_logo.jpg)
