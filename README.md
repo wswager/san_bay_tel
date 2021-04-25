@@ -84,9 +84,9 @@ The following models were fitted:
 
 **Based on the metrics calculated and the valuation of the metrics stated based on the business problem, XG Boost performed best of all of the models tested**
 
-* **ROC Score: 91.80%
-* **Precision: 95.56%
-* **F1 Score: 89.58%
+* **ROC Score: 91.80%**
+* **Precision: 95.56%**
+* **F1 Score: 89.58%**
 
 ![xg_boost.png](https://github.com/wswager/san_bay_tel/blob/main/images/confusion_matrix/xg_boost.png)
 
